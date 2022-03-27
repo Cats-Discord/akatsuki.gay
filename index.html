@@ -19,9 +19,9 @@
             }
 
             .center {
-                margin-left: auto;
-                margin-right: auto;
-                width: 50%;
+                margin-left: 50;
+                margin-right: 50;
+                width: 100%
             }
 
             
@@ -170,6 +170,14 @@
               display: flex;
               justify-content: center;
               align-items: center;
+            }
+
+            .bottom {
+              font-family: "Fredoka One", cursive;
+              position:absolute;
+              bottom:1rem;
+              font-size: x-large; 
+              color:white;
             }
 
             .css {
@@ -550,9 +558,17 @@
                 src="https://cdn.discordapp.com/attachments/928277485894897676/957660790175973439/unknown.png" />
               </div></a>
             
-
+              <center class="bottom center"><p id="bottom" ></p></center>
         
-        <script src="" async defer></script>
+        <script>
+            let dn = ["no lawsuit?", "peppy peppy peppy i am hacking", "i could giga trashtalked jackson", "every other human being just gets a job if they literally need to eat",
+                      "one happy ruri", "vape time", "verified cheaters on staff", "thanks for leaking my code LOL", "cucumber pod enjoyer", "Harbours ambivalence in server owners", 
+                      "LSD task force", "oh yeah dude solis is my favourite relax cheater too :)", "Built with MacOSX Mountain Lion", "running ripple stack in <del>2019</del> <del>2020</del> <del>2021</del> 2022!",
+                      "DROP DATABASE ripple;", "supreme hackerman mentality", "i manually did everything besides nginx using atoka's ripple edit", "<img src=\"https://cdn.discordapp.com/attachments/956749802006265888/957761987960504391/unknown.png\" />",
+                      "unban airpods", "<img src=\"https://pbs.twimg.com/media/FOd--0bVEAAUghw?format=jpg&name=small\" />", "<img src=\"https://media.discordapp.net/attachments/957729446490697758/957765984419201064/unknown.png\" />"];
+            
+            document.getElementById("bottom").innerHTML = dn[Math.floor(Math.random() * dn.length)]; 
+        </script>
 
 
     </body>
